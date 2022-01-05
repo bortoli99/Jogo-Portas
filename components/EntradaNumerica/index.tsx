@@ -10,7 +10,12 @@ interface EntradaNumericaProps {
 export default function EntradaNumerica(props: EntradaNumericaProps){
     
     function decremento(){
-        props.onChange(props.value - 1)    
+        if(props.value <= 1){
+            props.onChange(props.value)
+        }else{
+            props.onChange(props.value - 1)    
+        }
+
     }
     
     function incremento(){
