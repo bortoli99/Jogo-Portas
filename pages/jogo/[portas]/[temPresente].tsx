@@ -5,7 +5,7 @@ import Porta from "../../../components/Porta"
 import { atualizarPortas, criarPortas } from "../../../functions/portas"
 import styles from "./jogo.module.css"
 
-export default function jogo() {
+export default function Jogo() {
     const router = useRouter()
     const [portas, setPortas] = useState([])
     const [valido, setValido] = useState(false)
